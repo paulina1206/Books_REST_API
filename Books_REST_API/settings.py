@@ -24,7 +24,7 @@ SECRET_KEY = 'c_#h4c7%-$va&jzmccevl$hj)t(*7av6b*gl)e89ss2n!vcn3-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
 
-ALLOWED_HOSTS = ['https://paulina1206booksapi.herokuapp.com/']
+ALLOWED_HOSTS = ['https://paulina12books.herokuapp.com/', '127.0.0.1']
 
 # Application definition
 
