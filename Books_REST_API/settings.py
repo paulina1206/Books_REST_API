@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c_#h4c7%-$va&jzmccevl$hj)t(*7av6b*gl)e89ss2n!vcn3-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://paulina1206booksapi.herokuapp.com/']
 
 # Application definition
 
