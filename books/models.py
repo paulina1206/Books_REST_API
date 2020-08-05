@@ -29,7 +29,8 @@ class Book(models.Model):
     authors = models.ManyToManyField(Author, blank=True)
     published_date = models.CharField(max_length=10, blank=True)
     categories = models.ManyToManyField(Category, blank=True)
-    average_rating = models.FloatField(validators=[MaxValueValidator(5.0), MinValueValidator(0.0)], null=True, blank=True)
+    average_rating = models.FloatField(validators=[MaxValueValidator(5.0), MinValueValidator(0.0)], null=True,
+                                       blank=True)
     ratings_count = models.PositiveIntegerField(blank=True, null=True)
     thumbnail = models.URLField(null=True, blank=True)
 
